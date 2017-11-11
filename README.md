@@ -13,8 +13,11 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-### Example Code: Programatically
+### Example Code: Programmatical Initialization
 ```Swift
+
+import D2PDatePicker
+
 class ViewController: UIViewController {
     
     var datePickerView: D2PDatePicker!
@@ -55,7 +58,22 @@ extension ViewController: D2PDatePickerDelegate {
     
 }
 ```
+## Documentation
+All of the methods and properties available for **D2PDatePicker** are documented below.
 
+### Changing the Main Color
+##### The `mainColor` Property
+Use the mainColor property of `D2PDatePicker` to change the color.
+Example usage:
+```Swift
+self.datePickerView.mainColor = .red
+```
+
+### Delegate
+**D2PDatePicker** uses a delegate to receive date change events. The delegate object must conform to the `D2PDatePickerDelete` protocol, which is composed of the method:
+
+- `didChange:`  
+Sent to the delegate every time the date get updated.
 
 ## Requirements
 
@@ -73,6 +91,10 @@ pod 'D2PDatePicker'
 ## Author
 
 di2pra, pas495@gmail.com
+
+## Credits
+
+Credit to http://felicegattuso.com/projects/datedropper/ for the design
 
 ## License
 
