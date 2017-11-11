@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'D2PDatePicker'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Elegant and Easy-to-Use iOS Swift Date Picker'
 
 # This description is used to generate tags and improve search results.
@@ -29,6 +29,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.source_files = 'D2PDatePicker/Classes/**/*'
   s.resource_bundles = {
-    'D2PDatePicker' => ['D2PDatePicker/Assets/*.{xcassets}']
+    'D2PDatePicker' => ['D2PDatePicker/Assets/Assets.xcassets']
     }
 end
