@@ -1,5 +1,5 @@
 //
-//  DatePickerView.swift
+//  D2PDatePicker.swift
 //  D2PDatePicker
 //
 //  Created by Pradheep Rajendirane on 09/08/2017.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-public protocol DatePickerDelegate: class {
+public protocol D2PDatePickerDelegate: class {
     func didChange(toDate date: Date)
 }
 
-public class D2DDatePicker: UIView {
+public class D2PDatePicker: UIView {
     
-    public weak var delegate: DatePickerDelegate?
+    public weak var delegate: D2PDatePickerDelegate?
     
     @IBOutlet private weak var topView:UIView!
     @IBOutlet private weak var middleView:UIView!
@@ -61,7 +61,7 @@ public class D2DDatePicker: UIView {
         
     }
     
-    public var mainColor: UIColor! = UIColor(hex: "FD4741") {
+    public var mainColor: UIColor! = UIColor(red:0.99, green:0.28, blue:0.25, alpha:1.0) { // #FD4741
         didSet {
             self.topView.backgroundColor = mainColor
             self.dayView.weekDayLabel.textColor = mainColor

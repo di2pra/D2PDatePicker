@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatePickerView" customModule="D2PDatePicker" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="D2PDatePicker" customModule="D2PDatePicker" customModuleProvider="target">
             <connections>
                 <outlet property="bottomView" destination="KbX-hC-u9v" id="X9Y-Ax-xVg"/>
                 <outlet property="dayNextBtn" destination="9QX-PR-vns" id="pHh-cc-jaI"/>
