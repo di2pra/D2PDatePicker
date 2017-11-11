@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'D2PDatePicker_Example' do
+  pod 'D2PDatePicker', :path => '../'
+
+  target 'D2PDatePicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
