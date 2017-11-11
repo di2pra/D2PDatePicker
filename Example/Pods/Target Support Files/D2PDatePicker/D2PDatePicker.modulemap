@@ -1,0 +1,6 @@
+framework module D2PDatePicker {
+  umbrella header "D2PDatePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_D2PDatePicker_Example {
+  umbrella header "Pods-D2PDatePicker_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
