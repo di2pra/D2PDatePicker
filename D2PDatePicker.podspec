@@ -27,10 +27,12 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/di2pra'
 
   s.ios.deployment_target = '8.0'
-  s.source_files = 'D2PDatePicker/Classes/**/*'
-  s.resource_bundles = {
-    'D2PDatePicker' => ['D2PDatePicker/Assets/*.{xcassets}']
-  }
+  s.source_files = ['D2PDatePicker/Classes/**/*']
+# s.resource_bundles = {
+#   'D2PDatePicker' => ['D2PDatePicker/Assets/*.{xcassets}']
+# }
+
+  s.resource = 'D2PDatePicker/Assets/*.{xcassets}'
 
 
 end

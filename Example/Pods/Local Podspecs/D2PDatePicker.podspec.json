@@ -1,8 +1,8 @@
 {
   "name": "D2PDatePicker",
-  "version": "0.1.2",
-  "summary": "je ne comprends pas",
-  "description": "Lqa description de mon premier POD que je ne comprends pas",
+  "version": "0.1.3",
+  "summary": "Elegant and Easy-to-Use iOS Swift Date Picker",
+  "description": "Elegant and Easy-to-Use iOS Swift Date Picker made with love by DI2PRA",
   "homepage": "https://github.com/di2pra/D2PDatePicker",
   "license": {
     "type": "MIT",
@@ -13,16 +13,14 @@
   },
   "source": {
     "git": "https://github.com/di2pra/D2PDatePicker.git",
-    "tag": "0.1.2"
+    "tag": "0.1.3"
   },
   "social_media_url": "https://twitter.com/di2pra",
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "D2PDatePicker/Classes/**/*",
-  "resource_bundles": {
-    "D2PDatePicker": [
-      "D2PDatePicker/Assets/*.{xcassets}"
-    ]
-  }
+  "source_files": [
+    "D2PDatePicker/Classes/**/*"
+  ],
+  "resources": "D2PDatePicker/Assets/*.{xcassets}"
 }
