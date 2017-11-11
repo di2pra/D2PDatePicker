@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/D2PDatePicker.svg?style=flat)](http://cocoapods.org/pods/D2PDatePicker)
 
 
-![Screenshot of Demo App](https://github.com/di2pra/D2PDatePicker/raw/master/image/screen.png)
+![Screenshot of Demo App](https://raw.githubusercontent.com/di2pra/D2PDatePicker/master/image/demo.gif)
 
 
 ## Example
