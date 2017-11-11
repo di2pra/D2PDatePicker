@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'D2PDatePicker'
   s.version          = '0.1.0'
-  s.summary          = 'je ne comprends pas'
+  s.summary          = 'Elegant and Easy-to-Use iOS Swift Date Picker'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,21 +17,21 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'Lqa description de mon premier POD que je ne comprends pas'
+  s.description      = 'Elegant and Easy-to-Use iOS Swift Date Picker made with love by DI2PRA'
 
   s.homepage         = 'https://github.com/di2pra/D2PDatePicker'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'di2pra' => 'pas495@gmail.com' }
   s.source           = { :git => 'https://github.com/di2pra/D2PDatePicker.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/di2pra'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'D2PDatePicker/Classes/**/*'
   
   s.resource_bundles = {
-    'D2PDatePicker' => ['D2PDatePicker/Assets/*.png']
+    'D2PDatePicker' => ['D2PDatePicker/Assets/*.{xcassets}']
     }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

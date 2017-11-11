@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jPv-ke-cD9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="viewController" id="BYZ-38-t0r" customClass="ViewController" customModule="D2PDatePicker_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmr-TJ-5up" customClass="DatePickerView" customModule="D2PDatePicker">
+                                <rect key="frame" x="87" y="233.5" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="69V-XU-krQ"/>
+                                    <constraint firstAttribute="height" constant="200" id="f0P-28-hYj"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzi-9j-ezI">
+                                <rect key="frame" x="166" y="546" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VR9-cA-W6h">
+                                <rect key="frame" x="126.5" y="120" width="122" height="30"/>
+                                <state key="normal" title="Set Date to Today"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="b4h-IH-c07">
+                                <rect key="frame" x="20" y="82" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="COT-N7-AWl"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fmr-TJ-5up" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2eG-Zg-hcA"/>
+                            <constraint firstItem="VR9-cA-W6h" firstAttribute="top" secondItem="b4h-IH-c07" secondAttribute="bottom" constant="8" id="FHc-GH-5rI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jzi-9j-ezI" secondAttribute="bottom" constant="100" id="Fni-QD-L2e"/>
+                            <constraint firstAttribute="trailing" secondItem="b4h-IH-c07" secondAttribute="trailing" constant="20" id="HWt-gN-abe"/>
+                            <constraint firstItem="VR9-cA-W6h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="LPW-gh-Ouz"/>
+                            <constraint firstItem="Jzi-9j-ezI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OxD-8O-AWy"/>
+                            <constraint firstItem="fmr-TJ-5up" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZQl-C2-Iqx"/>
+                            <constraint firstItem="VR9-cA-W6h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nCK-j7-h5F"/>
+                            <constraint firstItem="b4h-IH-c07" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="oKy-qA-x10"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn" destination="VR9-cA-W6h" id="KOG-fl-LYi"/>
+                        <outlet property="dateLabel" destination="Jzi-9j-ezI" id="w8c-Ni-eUp"/>
+                        <outlet property="datePickerView" destination="fmr-TJ-5up" id="Db8-CG-10Q"/>
+                        <outlet property="stackView" destination="b4h-IH-c07" id="QjJ-21-ZpF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+        <!--Prog View Controller-->
+        <scene sceneID="txI-YO-MvN">
+            <objects>
+                <viewController storyboardIdentifier="progViewController" id="jPv-ke-cD9" customClass="ProgViewController" customModule="D2PDatePicker_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wRF-Pq-oW2"/>
+                        <viewControllerLayoutGuide type="bottom" id="QNH-aw-6ga"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l27-k9-qHO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfp-df-8Tg">
+                                <rect key="frame" x="166" y="546" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SB4-pe-k2m">
+                                <rect key="frame" x="126.5" y="120" width="122" height="30"/>
+                                <state key="normal" title="Set Date to Today"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="f9c-FN-QnE">
+                                <rect key="frame" x="20" y="82" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kGT-si-4PP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="f9c-FN-QnE" secondAttribute="trailing" constant="20" id="0Lz-Cf-sB5"/>
+                            <constraint firstItem="SB4-pe-k2m" firstAttribute="top" secondItem="wRF-Pq-oW2" secondAttribute="bottom" constant="100" id="0nh-Ad-Ojp"/>
+                            <constraint firstItem="Mfp-df-8Tg" firstAttribute="centerX" secondItem="l27-k9-qHO" secondAttribute="centerX" id="4x6-LE-vK7"/>
+                            <constraint firstItem="SB4-pe-k2m" firstAttribute="top" secondItem="f9c-FN-QnE" secondAttribute="bottom" constant="8" id="CCf-fi-dbc"/>
+                            <constraint firstItem="SB4-pe-k2m" firstAttribute="centerX" secondItem="l27-k9-qHO" secondAttribute="centerX" id="Ma0-Aj-V92"/>
+                            <constraint firstItem="f9c-FN-QnE" firstAttribute="leading" secondItem="l27-k9-qHO" secondAttribute="leading" constant="20" id="iWR-gc-e3J"/>
+                            <constraint firstItem="QNH-aw-6ga" firstAttribute="top" secondItem="Mfp-df-8Tg" secondAttribute="bottom" constant="100" id="zko-Ww-5Wx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn" destination="SB4-pe-k2m" id="bqQ-rA-EmU"/>
+                        <outlet property="dateLabel" destination="Mfp-df-8Tg" id="nUK-CJ-Wbs"/>
+                        <outlet property="stackView" destination="f9c-FN-QnE" id="0sb-X0-ISC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZ8-H4-b4m" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1087.2" y="-481.70914542728639"/>
+        </scene>
+    </scenes>
+</document>
