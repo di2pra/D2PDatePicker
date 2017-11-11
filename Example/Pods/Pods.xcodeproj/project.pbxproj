@@ -25,7 +25,7 @@
 		C2B8FED397C4FF32FD25FABB2BFE986E /* D2PDatePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF20E4AE101036D86455980C2BC67D6C /* D2PDatePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4362B4A72510C5DAC1AD6BD69683275 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B38C6EE6B93A47D4CDDFC47357CC4A /* UIView.swift */; };
 		D8FB043CA4E957C2D2CD0B0D7584393E /* Pods-D2PDatePicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 273910ACE2FD8A69678DDD323505B783 /* Pods-D2PDatePicker_Example-dummy.m */; };
-		E49887C01FB7A05E00070B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD74B9CBC82D3209B5A0CD5ED9E0130 /* Assets.xcassets */; };
+		E446A5281FB7A80800C386FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E446A5271FB7A80800C386FA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,6 @@
 		580E1D4A1FB27A63564EDF8459BD2AD8 /* Pods_D2PDatePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_D2PDatePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C8ADD5488AAA99A05D47BEFEE514D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B7C013999C6E6E91B7ECEEC482693E5 /* Pods_D2PDatePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_D2PDatePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CD74B9CBC82D3209B5A0CD5ED9E0130 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = D2PDatePicker/Assets/Assets.xcassets; sourceTree = "<group>"; };
 		64A339B792955BA309453C691F51BF69 /* Pods-D2PDatePicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-D2PDatePicker_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		79EC20DB12A5EE60C7706BA0DF9A8D46 /* D2PDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = D2PDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +86,7 @@
 		D415E0248D6F66FFEAB83D8E756FEA81 /* D2PDatePicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = D2PDatePicker.xib; path = D2PDatePicker/Classes/D2PDatePicker.xib; sourceTree = "<group>"; };
 		D75740A3817E03C6F18B8216C4A88417 /* DayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 		DDE454973B7C11CCF3FCA8A45AE2B2AF /* Pods-D2PDatePicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-D2PDatePicker_Example-umbrella.h"; sourceTree = "<group>"; };
+		E446A5271FB7A80800C386FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = D2PDatePicker/Assets/Assets.xcassets; sourceTree = "<group>"; };
 		EF20E4AE101036D86455980C2BC67D6C /* D2PDatePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "D2PDatePicker-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,7 +207,7 @@
 		8FE7A20BC549AD7137FA21D4A7CFCB74 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5CD74B9CBC82D3209B5A0CD5ED9E0130 /* Assets.xcassets */,
+				E446A5271FB7A80800C386FA /* Assets.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -410,7 +410,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E49887C01FB7A05E00070B5B /* Assets.xcassets in Resources */,
+				E446A5281FB7A80800C386FA /* Assets.xcassets in Resources */,
 				69A56F8F0B928969AE93894546FDEFA4 /* D2PDatePicker.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
