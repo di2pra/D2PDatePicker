@@ -29,6 +29,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.source_files = 'D2PDatePicker/Classes/**/*'
   s.resource_bundles = {
-    'D2PDatePicker' => ['D2PDatePicker/Assets/Assets.xcassets']
-    }
+    'D2PDatePicker' => ['D2PDatePicker/Assets/*.{xcassets}']
+  }
+
+
 end
