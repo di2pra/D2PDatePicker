@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'D2PDatePicker'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'Elegant and Easy-to-Use iOS Swift Date Picker'
 
 # This description is used to generate tags and improve search results.
