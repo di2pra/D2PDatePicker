@@ -13,7 +13,53 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+### Example Code: Programatically
+```Swift
+class ViewController: UIViewController {
+    
+    var datePickerView: D2PDatePicker!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Init DatePickerView
+        datePickerView = D2PDatePicker(frame: .zero, date: Date())
+        datePickerView.translatesAutoresizingMaskIntoConstraints = false
+        
+        // Set the Delegate
+        datePickerView.delegate = self
+        self.view.addSubview(datePickerView)
+        
+        self.view.addConstraints([
+            NSLayoutConstraint(item: datePickerView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 250),
+            NSLayoutConstraint(item: datePickerView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 200),
+            NSLayoutConstraint(item: datePickerView, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: datePickerView, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1, constant: 0)])
+
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
+extension ViewController: D2PDatePickerDelegate {
+    
+    func didChange(toDate date: Date) {
+        print(date)
+    }
+    
+}
+```
+
+
 ## Requirements
+
+No Requirements
 
 ## Installation
 
