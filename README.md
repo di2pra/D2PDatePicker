@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/D2PDatePicker.svg?style=flat)](http://cocoapods.org/pods/D2PDatePicker)
 [![Platform](https://img.shields.io/cocoapods/p/D2PDatePicker.svg?style=flat)](http://cocoapods.org/pods/D2PDatePicker)
 
+
+![Screenshot of Demo App](https://github.com/di2pra/D2PDatePicker/raw/master/image/screen.png)
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
