@@ -1,5 +1,5 @@
 PODS:
-  - D2PDatePicker (0.1.0)
+  - D2PDatePicker (0.1.2)
 
 DEPENDENCIES:
   - D2PDatePicker (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  D2PDatePicker: d6a3acb18297b7a4e501bb2e65d3b46edd1ab234
+  D2PDatePicker: cff0b8e829c88e9a50edd2d897125234ef86b3df
 
 PODFILE CHECKSUM: e597ff50116d408309819e7e43208edf7ab9d3ba
 

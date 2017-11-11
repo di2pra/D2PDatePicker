@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		0C8594E576D3C25BB0F78618 /* Pods_D2PDatePicker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040CF72D8F61214F2534D726 /* Pods_D2PDatePicker_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		AC1FC5EC3661A7A07DFB46F1 /* Pods_D2PDatePicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650E1F04759BD9E693B6ACA2 /* Pods_D2PDatePicker_Example.framework */; };
+		E43ECB461FB7816500CB3E27 /* ProgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43ECB441FB7816400CB3E27 /* ProgViewController.swift */; };
+		E43ECB471FB7816500CB3E27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43ECB451FB7816400CB3E27 /* ViewController.swift */; };
+		E43ECB4A1FB7818200CB3E27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43ECB481FB7818200CB3E27 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,23 +30,24 @@
 
 /* Begin PBXFileReference section */
 		040CF72D8F61214F2534D726 /* Pods_D2PDatePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_D2PDatePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		116D137C69E8FB1A2B08C531 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		116D137C69E8FB1A2B08C531 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		40BFE5C8A870598233380D33 /* Pods-D2PDatePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-D2PDatePicker_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-D2PDatePicker_Example/Pods-D2PDatePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
-		58B27E9BCD553D0F2BDCC7DB /* D2PDatePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = D2PDatePicker.podspec; path = ../D2PDatePicker.podspec; sourceTree = "<group>"; };
+		58B27E9BCD553D0F2BDCC7DB /* D2PDatePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = D2PDatePicker.podspec; path = ../D2PDatePicker.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* D2PDatePicker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = D2PDatePicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* D2PDatePicker_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = D2PDatePicker_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		650E1F04759BD9E693B6ACA2 /* Pods_D2PDatePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_D2PDatePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		705559EF9CDB58B4D8A55AEB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		705559EF9CDB58B4D8A55AEB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8C688EF0100EB4595F706513 /* Pods-D2PDatePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-D2PDatePicker_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-D2PDatePicker_Tests/Pods-D2PDatePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D0EE6D3DBC30B96AA575CD2F /* Pods-D2PDatePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-D2PDatePicker_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-D2PDatePicker_Tests/Pods-D2PDatePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E43ECB441FB7816400CB3E27 /* ProgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgViewController.swift; sourceTree = "<group>"; };
+		E43ECB451FB7816400CB3E27 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E43ECB491FB7818200CB3E27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2F5F2B3FE73C08D4F631CB7 /* Pods-D2PDatePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-D2PDatePicker_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-D2PDatePicker_Example/Pods-D2PDatePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,9 +115,10 @@
 		607FACD21AFB9204008FA782 /* Example for D2PDatePicker */ = {
 			isa = PBXGroup;
 			children = (
+				E43ECB481FB7818200CB3E27 /* Main.storyboard */,
+				E43ECB441FB7816400CB3E27 /* ProgViewController.swift */,
+				E43ECB451FB7816400CB3E27 /* ViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -248,7 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				E43ECB4A1FB7818200CB3E27 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -370,7 +373,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				E43ECB471FB7816500CB3E27 /* ViewController.swift in Sources */,
+				E43ECB461FB7816500CB3E27 /* ProgViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,20 +398,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				607FACDF1AFB9204008FA782 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		E43ECB481FB7818200CB3E27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43ECB491FB7818200CB3E27 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
