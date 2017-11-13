@@ -14,6 +14,7 @@ class ProgViewController: UIViewController {
     var datePickerView: D2PDatePicker!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var btn: UIButton!
+    @IBOutlet weak var directionBtn: UIButton!
     @IBOutlet weak var stackView: UIStackView!
     
     var colors: [UIColor] = [
@@ -72,6 +73,16 @@ class ProgViewController: UIViewController {
     
     @objc func setDate() {
         datePickerView.set(toDate: Date())
+    }
+
+    @IBAction func setDirection(_ sender: Any) {
+        if datePickerView.isVertical() {
+            datePickerView.set(direction: false)
+            directionBtn.setTitle("Set Direction Vertical", for: .normal)
+        } else {
+            datePickerView.set(direction: true)
+            directionBtn.setTitle("Set Direction Horizontal", for: .normal)
+        }
     }
 
     override func didReceiveMemoryWarning() {

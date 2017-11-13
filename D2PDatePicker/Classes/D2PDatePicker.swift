@@ -39,8 +39,9 @@ public class D2PDatePicker: UIView {
             delegate?.didChange(toDate: selectedDate)
         }
     }
-    
-    
+
+    private var isDirectionVertical = true
+
     required public init?(coder aDecoder: NSCoder) {   // 2 - storyboard initializer
         super.init(coder: aDecoder)
         
@@ -123,7 +124,15 @@ public class D2PDatePicker: UIView {
         setLabel(toDate: date)
         self.selectedDate = date
     }
+
+    public func set(direction isVertical: Bool) {
+        self.isDirectionVertical = isVertical
+    }
     
+    public func isVertical() -> Bool {
+        return self.isDirectionVertical
+    }
+
     private func setLabel(toDate date: Date) {
         let formatter = DateFormatter()
         
@@ -144,42 +153,56 @@ public class D2PDatePicker: UIView {
         
         if btn.tag == 0 {
             
-            selectedDate = self.monthView.anim(direction: .backward, date: selectedDate)
+            selectedDate = self.monthView.anim(direction: getDirection(isForward: false), date: selectedDate)
             _ = self.dayView.anim(direction: .identity, date: selectedDate)
             _ = self.yearView.anim(direction: .identity, date: selectedDate)
         
         } else if btn.tag == 1 {
             
-            selectedDate =  self.monthView.anim(direction: .forward, date: selectedDate)
+            selectedDate =  self.monthView.anim(direction: getDirection(isForward: true), date: selectedDate)
             _ = self.dayView.anim(direction: .identity, date: selectedDate)
             _ = self.yearView.anim(direction: .identity, date: selectedDate)
             
         } else if btn.tag == 2 {
             
-            selectedDate = self.dayView.anim(direction: .backward, date: selectedDate)
+            selectedDate = self.dayView.anim(direction: getDirection(isForward: false), date: selectedDate)
             _ = self.monthView.anim(direction: .identity, date: selectedDate)
             _ = self.yearView.anim(direction: .identity, date: selectedDate)
             
         } else if btn.tag == 3 {
             
-            selectedDate = self.dayView.anim(direction: .forward, date: selectedDate)
+            selectedDate = self.dayView.anim(direction: getDirection(isForward: true), date: selectedDate)
             _ = self.monthView.anim(direction: .identity, date: selectedDate)
             _ = self.yearView.anim(direction: .identity, date: selectedDate)
             
         } else if btn.tag == 4 {
             
-            selectedDate = self.yearView.anim(direction: .backward, date: selectedDate)
+            selectedDate = self.yearView.anim(direction: getDirection(isForward: false), date: selectedDate)
             _ = self.dayView.anim(direction: .identity, date: selectedDate)
             _ = self.monthView.anim(direction: .identity, date: selectedDate)
             
         } else if btn.tag == 5 {
             
-            selectedDate = self.yearView.anim(direction: .forward, date: selectedDate)
+            selectedDate = self.yearView.anim(direction: getDirection(isForward: true), date: selectedDate)
             _ = self.dayView.anim(direction: .identity, date: selectedDate)
             _ = self.monthView.anim(direction: .identity, date: selectedDate)
             
         }
         
+    }
+    
+    private func getDirection(isForward: Bool) -> AnimationDirection {
+        let directionPattern = (isDirectionVertical, isForward)
+        switch directionPattern {
+        case (true, true):
+            return .forward
+        case (true, false):
+            return .backward
+        case (false, true):
+            return .hForward
+        case (false, false):
+            return .hBackward
+        }
     }
 
     /*
