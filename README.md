@@ -5,8 +5,13 @@
 [![License](https://img.shields.io/cocoapods/l/D2PDatePicker.svg?style=flat)](http://cocoapods.org/pods/D2PDatePicker)
 [![Platform](https://img.shields.io/cocoapods/p/D2PDatePicker.svg?style=flat)](http://cocoapods.org/pods/D2PDatePicker)
 
-
-![Screenshot of Demo App](https://raw.githubusercontent.com/di2pra/D2PDatePicker/master/image/demo.gif)
+<table>
+  <tr>
+    <th><img alt="Screenshot 1" src="https://github.com/di2pra/D2PDatePicker/blob/master/image/screen_1.png" width="300"></th>
+    <th><img alt="Screenshot 1" src="https://github.com/di2pra/D2PDatePicker/blob/master/image/demo.gif" width="300"></th>
+    <th><img alt="Screenshot 2" src="https://github.com/di2pra/D2PDatePicker/blob/master/image/screen_2.png" width="300"></th>
+  </tr>
+</table>
 
 
 ## Example
