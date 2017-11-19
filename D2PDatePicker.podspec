@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.description      = 'Elegant and Easy-to-Use iOS Swift Date Picker made with love by DI2PRA'
 
   s.homepage         = 'https://github.com/di2pra/D2PDatePicker'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://github.com/di2pra/D2PDatePicker/blob/master/image/screen_1.png', 'https://github.com/di2pra/D2PDatePicker/blob/master/image/screen_2.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'di2pra' => 'pas495@gmail.com' }
   s.source           = { :git => 'https://github.com/di2pra/D2PDatePicker.git', :tag => s.version.to_s }

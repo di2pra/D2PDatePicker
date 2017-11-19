@@ -69,12 +69,6 @@ public class D2PDatePicker: UIView {
     }
     
     
-    /*init() {   // 3 - programmatic initializer
-        super.init(frame: CGRect())  // 4.
-        
-        
-    }*/
-    
     override public func awakeFromNib() {
         super.awakeFromNib()
         
