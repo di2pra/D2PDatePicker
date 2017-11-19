@@ -72,8 +72,8 @@ self.datePickerView.mainColor = .red
 ### Delegate
 **D2PDatePicker** uses a delegate to receive date change events. The delegate object must conform to the `D2PDatePickerDelete` protocol, which is composed of the method:
 
-- `didChange:`  
-Sent to the delegate every time the date get updated.
+- `didChange(toDate date: Date)`
+Tells the delegate that the selected the date get updated.
 
 ## Requirements
 
@@ -90,11 +90,11 @@ pod 'D2PDatePicker'
 
 ## Author
 
-di2pra, pas495@gmail.com
+[Di2pra](https://twitter.com/di2pra) [LinkedIn](https://www.linkedin.com/in/di2pra/)
 
 ## Credits
 
-Credit to http://felicegattuso.com/projects/datedropper/ for the design
+Credit to http://felicegattuso.com/projects/datedropper/ for the inspiration
 
 ## License
 
