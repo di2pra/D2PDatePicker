@@ -20,9 +20,9 @@ class MonthView: AnimateView {
         
         var newDate:Date
         
-        if direction == .backward {
+        if direction == .backward || direction == .hBackward {
             newDate = Calendar.current.date(byAdding: .month, value: -1, to: date)!
-        } else if direction == .forward {
+        } else if direction == .forward || direction == .hForward {
             newDate = Calendar.current.date(byAdding: .month, value: 1, to: date)!
         } else {
             newDate = date

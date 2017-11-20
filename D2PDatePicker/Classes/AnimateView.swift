@@ -42,6 +42,10 @@ class AnimateView: UIView {
                 self.contentView.transform = .init(translationX: 0, y: self.frame.height)
             } else if direction == .forward {
                 self.contentView.transform = .init(translationX: 0, y: -self.frame.height)
+            } else if direction == .hBackward {
+                self.contentView.transform = .init(translationX: self.frame.width, y: 0)
+            } else if direction == .hForward {
+                self.contentView.transform = .init(translationX: -self.frame.width, y: 0)
             }
             
             
@@ -53,6 +57,10 @@ class AnimateView: UIView {
                     self.transform = .init(translationX: 0, y: -self.frame.height)
                 } else if direction == .forward {
                     self.transform = .init(translationX: 0, y: self.frame.height)
+                } else if direction == .hBackward {
+                    self.transform = .init(translationX: -self.frame.width, y: 0)
+                } else if direction == .hForward {
+                    self.transform = .init(translationX: self.frame.width, y: 0)
                 }
                 
                 self.imageView.alpha = 0.0
@@ -90,5 +98,5 @@ class AnimateView: UIView {
 }
 
 enum AnimationDirection {
-    case backward, forward, identity
+    case backward, forward, identity, hBackward, hForward
 }

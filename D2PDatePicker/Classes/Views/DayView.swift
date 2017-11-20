@@ -19,9 +19,9 @@ class DayView: AnimateView {
         let dateFormatter = DateFormatter()
         var newDate:Date
         
-        if direction == .backward {
+        if direction == .backward || direction == .hBackward {
             newDate = Calendar.current.date(byAdding: .day, value: -1, to: date)!
-        } else if direction == .forward {
+        } else if direction == .forward || direction == .hForward {
             newDate = Calendar.current.date(byAdding: .day, value: 1, to: date)!
         } else {
             newDate = date

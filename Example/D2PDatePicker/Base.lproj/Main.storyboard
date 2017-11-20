@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jPv-ke-cD9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jPv-ke-cD9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -98,14 +98,23 @@
                                     <constraint firstAttribute="height" constant="30" id="kGT-si-4PP"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5Y-a3-4qe">
+                                <rect key="frame" x="105.5" y="158" width="163" height="30"/>
+                                <state key="normal" title="Set Direction Horizontal"/>
+                                <connections>
+                                    <action selector="setDirection:" destination="jPv-ke-cD9" eventType="touchUpInside" id="yoG-jf-Wx8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="f9c-FN-QnE" secondAttribute="trailing" constant="20" id="0Lz-Cf-sB5"/>
                             <constraint firstItem="SB4-pe-k2m" firstAttribute="top" secondItem="wRF-Pq-oW2" secondAttribute="bottom" constant="100" id="0nh-Ad-Ojp"/>
+                            <constraint firstItem="g5Y-a3-4qe" firstAttribute="centerX" secondItem="l27-k9-qHO" secondAttribute="centerX" id="3a1-Yl-naj"/>
                             <constraint firstItem="Mfp-df-8Tg" firstAttribute="centerX" secondItem="l27-k9-qHO" secondAttribute="centerX" id="4x6-LE-vK7"/>
                             <constraint firstItem="SB4-pe-k2m" firstAttribute="top" secondItem="f9c-FN-QnE" secondAttribute="bottom" constant="8" id="CCf-fi-dbc"/>
                             <constraint firstItem="SB4-pe-k2m" firstAttribute="centerX" secondItem="l27-k9-qHO" secondAttribute="centerX" id="Ma0-Aj-V92"/>
+                            <constraint firstItem="g5Y-a3-4qe" firstAttribute="top" secondItem="SB4-pe-k2m" secondAttribute="bottom" constant="8" id="gqN-IQ-k4c"/>
                             <constraint firstItem="f9c-FN-QnE" firstAttribute="leading" secondItem="l27-k9-qHO" secondAttribute="leading" constant="20" id="iWR-gc-e3J"/>
                             <constraint firstItem="QNH-aw-6ga" firstAttribute="top" secondItem="Mfp-df-8Tg" secondAttribute="bottom" constant="100" id="zko-Ww-5Wx"/>
                         </constraints>
@@ -113,6 +122,7 @@
                     <connections>
                         <outlet property="btn" destination="SB4-pe-k2m" id="bqQ-rA-EmU"/>
                         <outlet property="dateLabel" destination="Mfp-df-8Tg" id="nUK-CJ-Wbs"/>
+                        <outlet property="directionBtn" destination="g5Y-a3-4qe" id="fYB-Ds-QJI"/>
                         <outlet property="stackView" destination="f9c-FN-QnE" id="0sb-X0-ISC"/>
                     </connections>
                 </viewController>
